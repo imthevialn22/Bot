@@ -105,4 +105,4 @@ async def set_pings(ctx, user: discord.Member, everyone_pings: int, here_pings: 
         await ctx.send(f"{user.mention} does not have a slot.")
 
 # Run the bot (Replace 'YOUR_BOT_TOKEN' with your actual bot token)
-bot.run("cPRQgb0KnnfqcSeUw-jjP5O4Tq6IWdoH")
+bot.run("cPRQgb0KnnfqcSeUw")
