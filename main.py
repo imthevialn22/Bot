@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os  # Import os to get environment variables
 
 intents = discord.Intents.default()
 intents.guilds = True
@@ -104,5 +105,10 @@ async def set_pings(ctx, user: discord.Member, everyone_pings: int, here_pings: 
     else:
         await ctx.send(f"{user.mention} does not have a slot.")
 
-# Run the bot (Replace 'YOUR_BOT_TOKEN' with your actual bot token)
-bot.run("cPRQgb0KnnfqcSeUw-jjP5O4Tq6IWdoH")
+# Get the bot token securely from environment variables
+TOKEN = os.getenv("3u3AQFUDa77cHYYHkHtYrq-FVMb9KTqP")  
+
+if TOKEN is None:
+    print("ERROR: DISCORD_BOT_TOKEN not found. Please set it in your environment variables.")
+else:
+    bot.run(TOKEN)
