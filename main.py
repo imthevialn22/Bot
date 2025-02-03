@@ -106,7 +106,7 @@ async def set_pings(ctx, user: discord.Member, everyone_pings: int, here_pings: 
         await ctx.send(f"{user.mention} does not have a slot.")
 
 # Get the bot token securely from environment variables
-TOKEN = os.getenv("3u3AQFUDa77cHYYHkHtYrq-FVMb9KTqP")  
+TOKEN = os.getenv("MTMzNTkxNzY4NTU3NzM1MTIxOQ.GN7SE1.lXPg04aepOCXxLDjVUVcn2BD_6D4EWPUr4Rx88")  
 
 if TOKEN is None:
     print("ERROR: DISCORD_BOT_TOKEN not found. Please set it in your environment variables.")
